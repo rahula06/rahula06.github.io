@@ -2,11 +2,14 @@
 section: home
 ---
 <section class="home-intro">
-  <p>
-    I am a PhD student in physics at UT Austin working on theoretical quantum information.
-    My research interests include quantum information, many-body dynamics, pseudorandomness, and quantum cryptography.
-    I am advised by <a href="https://nickrhj.github.io/">Nick Hunter-Jones</a>.
-  </p>
+  <div class="home-intro-text">
+    <p>
+      I am a PhD student in physics at UT Austin working on theoretical quantum information.
+      My research interests include quantum information, many-body dynamics, pseudorandomness, and quantum cryptography.
+      I am advised by <a href="https://nickrhj.github.io/">Nick Hunter-Jones</a>.
+    </p>
+  </div>
+  <img class="home-photo" src="{{ '/assets/profile.jpg' | relative_url }}" alt="Rahul Arvind">
 </section>
 
 <section class="publications-section home-work" aria-label="My work">
@@ -17,5 +20,3 @@ section: home
     {% endfor %}
   </ol>
 </section>
-
-<!-- redeploy-marker -->
