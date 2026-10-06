@@ -1,4 +1,4 @@
-<article class="paper">
+<article class="paper" id="paper-{{ include.paper.arxiv | replace: '.', '-' }}">
   <div class="paper-year">{{ include.paper.year }}</div>
   <div class="paper-main">
     <h3><a href="https://arxiv.org/abs/{{ include.paper.arxiv }}">{{ include.paper.title | escape }}</a></h3>
