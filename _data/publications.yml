@@ -1,5 +1,6 @@
 - title: "Finite-bath projected ensembles in dual-unitary circuits"
   authors: "Rahul Arvind, Nicholas Hunter-Jones"
+  coauthors: "Nicholas Hunter-Jones"
   year: 2026
   venue: "arXiv:2610.06754 (2026)"
   arxiv: "2610.06754"
@@ -8,6 +9,7 @@
 
 - title: "Function-like pseudorandom unitaries generate pseudorandom quantum processes"
   authors: "Zitai Xu, Rahul Arvind, Kishor Bharti, Tobias Haug, Dax Enshan Koh, Wai-Keong Mok, Andrew Tanggara, Alexey V. Gorshkov"
+  coauthors: "Zitai Xu, Kishor Bharti, Tobias Haug, Dax Enshan Koh, Wai-Keong Mok, Andrew Tanggara, Alexey V. Gorshkov"
   year: 2026
   venue: "arXiv:2610.01038 (2026)"
   arxiv: "2610.01038"
@@ -16,6 +18,7 @@
 
 - title: "Quantum Error Correction in Adversarial Regimes"
   authors: "Rahul Arvind, Nikhil Bansal, Dax Enshan Koh, Tobias Haug, Kishor Bharti"
+  coauthors: "Nikhil Bansal, Dax Enshan Koh, Tobias Haug, Kishor Bharti"
   year: 2026
   venue: "Physical Review A (2026)"
   arxiv: "2509.08943"
@@ -25,6 +28,7 @@
 
 - title: "A quantum tug of war between randomness and symmetries on homogeneous spaces"
   authors: "Rahul Arvind, Kishor Bharti, Jun Yong Khoo, Dax Enshan Koh, Jian Feng Kong"
+  coauthors: "Kishor Bharti, Jun Yong Khoo, Dax Enshan Koh, Jian Feng Kong"
   year: 2025
   venue: "Physical Review Research 7, 013105 (2025)"
   arxiv: "2309.05253"

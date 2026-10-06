@@ -12,11 +12,16 @@ section: home
   <img class="home-photo" src="{{ '/assets/profile.jpg' | relative_url }}?v=3600dfd" alt="Rahul Arvind">
 </section>
 
-<section class="publications-section home-work" aria-label="My work">
+<section id="publications" class="publications-section home-work" aria-label="My work">
   <h2>My work</h2>
   <ol class="home-pub-list">
     {% for paper in site.data.publications %}
-      <li><a href="{{ '/publications/' | relative_url }}#paper-{{ paper.arxiv | replace: '.', '-' }}">{% if paper.arxiv == '2509.08943' %}Quantum error correction in adversarial regimes{% else %}{{ paper.title | escape }}{% endif %}</a></li>
+      <li>
+        <div class="home-pub-entry">
+          <a href="https://arxiv.org/abs/{{ paper.arxiv }}">{% if paper.arxiv == '2509.08943' %}Quantum error correction in adversarial regimes{% else %}{{ paper.title | escape }}{% endif %}</a>
+          <div class="home-pub-byline">with {{ paper.coauthors | escape }} · {{ paper.year }}</div>
+        </div>
+      </li>
     {% endfor %}
   </ol>
 </section>
