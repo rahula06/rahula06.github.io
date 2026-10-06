@@ -1,0 +1,31 @@
+title: Rahul Arvind
+description: Research in quantum information, randomness, and quantum dynamics.
+url: "https://rahula06.github.io"
+baseurl: "" # Leave empty for YOUR-USERNAME.github.io; use /repo-name for a project site.
+author: Rahul Arvind
+email: ""
+github_url: "https://github.com/rahula06"
+scholar_url: ""
+timezone: America/Chicago
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      section: blog
+exclude:
+  - README.md
+  - SOURCES.md
+  - PREVIEW.html
+  - Gemfile
+  - Gemfile.lock
+  - vendor

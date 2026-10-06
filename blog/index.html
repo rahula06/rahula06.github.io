@@ -1,0 +1,14 @@
+---
+title: Blog
+section: blog
+---
+<header class="page-heading"><p class="eyebrow">Notes &amp; writing</p><h1>Blog</h1><p>A space for research notes, explanations, and ideas in progress.</p></header>
+{% if site.posts.size > 0 %}
+<section class="post-list" aria-label="Blog posts">
+  {% for post in site.posts %}
+  <article class="post-preview"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %-d, %Y' }}</time><h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2><p>{{ post.description | default: post.excerpt | strip_html }}</p><a href="{{ post.url | relative_url }}">Read post →</a></article>
+  {% endfor %}
+</section>
+{% else %}
+<div class="empty-state"><span class="empty-symbol" aria-hidden="true">∴</span><h2>More soon.</h2><p>No posts yet. In the meantime, you can find my latest work on the publications page.</p><a href="{{ '/publications/' | relative_url }}">Browse publications →</a></div>
+{% endif %}

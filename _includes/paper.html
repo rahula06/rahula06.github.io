@@ -1,0 +1,14 @@
+<article class="paper">
+  <div class="paper-year">{{ include.paper.year }}</div>
+  <div>
+    <h3><a href="https://arxiv.org/abs/{{ include.paper.arxiv }}">{{ include.paper.title | escape }}</a></h3>
+    <p class="authors">{{ include.paper.authors | escape | replace: 'Rahul Arvind', '<strong>Rahul Arvind</strong>' }}</p>
+    <p class="venue">{{ include.paper.venue | escape }}</p>
+    {% if include.summary %}<p class="paper-summary">{{ include.paper.summary | escape }}</p>{% endif %}
+    <div class="paper-links">
+      <a href="https://arxiv.org/abs/{{ include.paper.arxiv }}">arXiv ↗</a>
+      <a href="https://arxiv.org/pdf/{{ include.paper.arxiv }}">PDF ↗</a>
+      {% if include.paper.doi %}<a href="https://doi.org/{{ include.paper.doi }}">Journal ↗</a>{% endif %}
+    </div>
+  </div>
+</article>

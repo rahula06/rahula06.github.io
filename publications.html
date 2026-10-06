@@ -1,0 +1,9 @@
+---
+title: Publications
+section: publications
+permalink: /publications/
+---
+<header class="page-heading"><p class="eyebrow">Research</p><h1>Publications</h1><p>Papers and preprints on quantum information, randomness, and dynamics.</p></header>
+<section aria-label="Papers and preprints">
+  {% for paper in site.data.publications %}{% include paper.html paper=paper summary=true %}{% endfor %}
+</section>
