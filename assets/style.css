@@ -55,20 +55,46 @@ p{margin:0}
   font-size:15.5px;
   line-height:1.72;
 }
+.home-intro{
+  padding:30px 0 25px;
+  border-bottom:1px solid var(--line);
+}
+.home-intro p{
+  max-width:690px;
+  color:var(--ink);
+  font-size:15px;
+  line-height:1.7;
+}
 .publications-section{padding-top:27px}
 .publications-section>h2{margin-bottom:3px}
-.home-work{padding-top:34px}
+.home-work{padding-top:26px}
 .home-pub-list{
-  margin:14px 0 0;
-  padding-left:22px;
+  counter-reset:pub;
+  list-style:none;
+  margin:12px 0 0;
+  padding:0;
 }
 .home-pub-list li{
-  padding:4px 0 4px 3px;
+  counter-increment:pub;
+  display:grid;
+  grid-template-columns:22px 1fr;
+  gap:4px;
+  padding:3px 0;
   color:var(--muted);
   font-size:13px;
+  line-height:1.45;
+}
+.home-pub-list li::before{
+  content:counter(pub) ".";
+  color:var(--muted);
+  font-size:12px;
+  text-align:right;
 }
 .home-pub-list a{
   color:var(--ink);
+  font-size:13px;
+  font-weight:400;
+  line-height:1.45;
   text-decoration:none;
 }
 .home-pub-list a:hover{
@@ -162,7 +188,9 @@ mjx-container[display=true]{overflow-x:auto;overflow-y:hidden}
   .shell{width:calc(100% - 28px)}
   .site-header{padding:15px 0}
   h1{font-size:34px}
-  .home-work{padding-top:28px}
+  .home-intro{padding:24px 0 20px}
+  .home-intro p{font-size:14.5px}
+  .home-work{padding-top:22px}
   .paper{grid-template-columns:1fr;gap:2px;padding:16px 0}
   .paper-year{padding-top:0}
   .paper h3{font-size:18px}
