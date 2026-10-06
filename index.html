@@ -1,17 +1,15 @@
 ---
 section: home
 ---
-<section class="intro-section">
-  <h1>Rahul Arvind</h1>
-  <p class="bio">
-    I am a PhD student in physics at UT Austin working on theoretical quantum information.
-    My interests include quantum information, many-body dynamics, pseudorandomness, and quantum cryptography.
-  </p>
-</section>
-
-<section id="publications" class="publications-section" aria-label="Publications">
-  <h2>Publications</h2>
-  {% for paper in site.data.publications %}
-    {% include paper.html paper=paper summary=false %}
-  {% endfor %}
+<section class="work-section">
+  <h1>My work</h1>
+  <ul class="pub-title-list">
+    {% for paper in site.data.publications %}
+      <li>
+        <a href="{{ '/publications/' | relative_url }}#paper-{{ paper.arxiv | replace: '.', '-' }}">
+          {{ paper.title | escape }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
 </section>
