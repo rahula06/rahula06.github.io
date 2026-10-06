@@ -1,17 +1,17 @@
 ---
 section: home
 ---
-<section class="hero">
-  <p class="eyebrow">Theoretical quantum information</p>
+<section class="intro-section">
   <h1>Rahul Arvind</h1>
-  <p class="intro">I study randomness and structure<br class="desktop-break"> in the quantum world.</p>
-  <p class="bio">My research interests span quantum information, many-body dynamics, and quantum cryptography. I am interested in how randomness emerges in quantum systems, how we can reproduce it efficiently, and what it makes possible.</p>
-  <div class="hero-links"><a class="primary-link" href="{{ '/publications/' | relative_url }}">Explore my research <span aria-hidden="true">↗</span></a><a href="{{ '/blog/' | relative_url }}">Notes &amp; writing <span aria-hidden="true">→</span></a></div>
+  <p class="bio">
+    I am a PhD student in physics at UT Austin working on theoretical quantum information.
+    My interests include quantum information, many-body dynamics, pseudorandomness, and quantum cryptography.
+  </p>
 </section>
-<section class="research-topics" aria-label="Research interests">
-  <span>Quantum randomness</span><span>Many-body dynamics</span><span>Quantum cryptography</span>
-</section>
-<section class="recent-work">
-  <div class="section-heading"><h2>Recent work</h2><a href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">→</span></a></div>
-  {% for paper in site.data.publications limit:2 %}{% include paper.html paper=paper summary=true %}{% endfor %}
+
+<section id="publications" class="publications-section" aria-label="Publications">
+  <h2>Publications</h2>
+  {% for paper in site.data.publications %}
+    {% include paper.html paper=paper summary=false %}
+  {% endfor %}
 </section>
