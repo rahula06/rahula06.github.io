@@ -2,7 +2,10 @@
 title: Blog
 section: blog
 ---
-<header class="page-heading"><p class="eyebrow">Notes &amp; writing</p><h1>Blog</h1><p>A space for research notes, explanations, and ideas in progress.</p></header>
+<header class="page-heading">
+  <h1>Blog</h1>
+  <p>Research notes, explanations, and ideas in progress.</p>
+</header>
 {% if site.posts.size > 0 %}
 <section class="post-list" aria-label="Blog posts">
   {% for post in site.posts %}
@@ -10,5 +13,5 @@ section: blog
   {% endfor %}
 </section>
 {% else %}
-<div class="empty-state"><span class="empty-symbol" aria-hidden="true">∴</span><h2>More soon.</h2><p>No posts yet. In the meantime, you can find my latest work on the publications page.</p><a href="{{ '/publications/' | relative_url }}">Browse publications →</a></div>
+<div class="empty-state"><h2>More soon.</h2><p>No posts yet. In the meantime, you can find my papers on the homepage.</p><a href="{{ '/' | relative_url }}#publications">Browse publications →</a></div>
 {% endif %}
