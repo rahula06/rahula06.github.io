@@ -21,6 +21,7 @@
     <a class="wordmark" href="{{ '/' | relative_url }}">Rahul Arvind</a>
     <nav aria-label="Main navigation">
       <a href="{{ '/' | relative_url }}" {% if page.section == 'home' %}aria-current="page"{% endif %}>Home</a>
+      <a href="{{ '/publications/' | relative_url }}" {% if page.section == 'publications' %}aria-current="page"{% endif %}>Publications</a>
       <a href="{{ '/blog/' | relative_url }}" {% if page.section == 'blog' %}aria-current="page"{% endif %}>Blog</a>
     </nav>
   </header>
