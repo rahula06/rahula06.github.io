@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
-  <meta name="theme-color" content="#f8f7f2">
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <meta name="theme-color" content="#fbfaf7">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}?v={{ site.github.build_revision }}">
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
   {% if site.url != '' %}<link rel="canonical" href="{{ page.url | absolute_url }}">{% endif %}
   {% feed_meta %}
@@ -18,10 +18,9 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header shell">
-    <a class="wordmark" href="{{ '/' | relative_url }}">Rahul Arvind<span class="wordmark-dot">.</span></a>
+    <a class="wordmark" href="{{ '/' | relative_url }}">Rahul Arvind</a>
     <nav aria-label="Main navigation">
       <a href="{{ '/' | relative_url }}" {% if page.section == 'home' %}aria-current="page"{% endif %}>Home</a>
-      <a href="{{ '/publications/' | relative_url }}" {% if page.section == 'publications' %}aria-current="page"{% endif %}>Publications</a>
       <a href="{{ '/blog/' | relative_url }}" {% if page.section == 'blog' %}aria-current="page"{% endif %}>Blog</a>
     </nav>
   </header>
